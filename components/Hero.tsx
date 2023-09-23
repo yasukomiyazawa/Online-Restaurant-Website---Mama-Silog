@@ -28,13 +28,14 @@ const Hero = () => {
             <CustomButton
               title="See More"
               style="border border-yellow-400 bg-yellow-400 py-2 px-5 hover:bg-rose-900"
+              href="#bestsellers"
             />
           </div>
           <Image
             src="/tapsilog.png"
             alt="tapsilog photo"
             width={300}
-            height={100}
+            height={90}
           />
         </div>
       </div>

@@ -28,7 +28,13 @@ module.exports = {
       backgroundImage: {
         'silogMeals': "url('/hero.png')",
         'silogMeals1': "url('/hero1.png')",
-        'footerBg': "url('/footer-bg.png')"
+        'footerBg': "url('/footer-bg.png')",
+        'tapsilog': "url('/tapsilog.png')",
+        'bangsilog': "url('/bangsilog.png')",
+        'tocilog': "url('/tocilog.png')",
+        'spamsilog': "url('/spamsilog.png')",
+        'tuyosilog': "url('/tuyosilog.png')",
+
       },
       fontSize: {
         '30': '1.875rem', // Add your custom text size here

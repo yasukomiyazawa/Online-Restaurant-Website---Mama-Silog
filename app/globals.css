@@ -90,3 +90,9 @@
   @apply mt-16 flex justify-center items-center flex-col gap-2;
 }
 /* END: Home styles */
+
+/* HEADERS */
+
+.header {
+  @apply flex justify-center mb-10 mt-10 text-5xl font-bold;
+}
