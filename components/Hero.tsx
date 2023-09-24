@@ -28,7 +28,7 @@ const Hero = () => {
             <CustomButton
               title="See More"
               style="border border-yellow-400 bg-yellow-400 py-2 px-5 hover:bg-rose-900"
-              href="#bestsellers"
+              href="bestsellers"
             />
           </div>
           <Image
