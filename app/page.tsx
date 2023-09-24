@@ -6,7 +6,6 @@ export default function Home() {
   return (
     // min-h-screen
     <main className="flex flex-col items-center justify-between">
-      <Hero />
       <BestSellers />
       <div className="w-full bg-silogMeals2 bg-cover bg-center">
         <div className="h-1/4 flex justify-around py-20 text-white font-bold">
