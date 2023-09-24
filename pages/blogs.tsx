@@ -3,13 +3,13 @@ import React from "react";
 import "../app/globals.css";
 import PageBanner from "@/components/PageBanner";
 
-const gallery = () => {
+const blogs = () => {
   return (
     <>
       <Navbar />
 
       <div>
-        <PageBanner bgImg="bg-menuBanner" title="Gallery" />
+        <PageBanner bgImg="bg-menuBanner" title="Blogs" />
       </div>
 
       <Footer />
@@ -17,4 +17,4 @@ const gallery = () => {
   );
 };
 
-export default gallery;
+export default blogs;

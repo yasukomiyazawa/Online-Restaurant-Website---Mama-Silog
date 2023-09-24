@@ -25,3 +25,10 @@ export interface BlogCardProps {
     description: string
 
 }
+
+export interface PageBannerProps {
+
+    bgImg: string
+    title: string
+
+}
