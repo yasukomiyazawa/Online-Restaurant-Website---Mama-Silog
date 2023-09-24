@@ -15,3 +15,13 @@ export interface BestSellersCardProps {
     itemStyle?: string
 
 }
+
+export interface BlogCardProps {
+
+    bgImg: string
+    user: string
+    date: string
+    title: string
+    description: string
+
+}

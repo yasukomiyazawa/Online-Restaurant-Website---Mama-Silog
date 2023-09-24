@@ -4,6 +4,8 @@ import Hero from "./Hero";
 import CustomButton from "./CustomButton";
 import BestSellers from "./BestSellers";
 import BestSellersCard from "./BestSellersCard";
+import Blogs from "./Blogs";
+import BlogsCard from "./BlogsCard";
 
 export {
     Navbar,
@@ -11,5 +13,7 @@ export {
     Hero,
     CustomButton,
     BestSellers,
-    BestSellersCard
+    BestSellersCard,
+    Blogs,
+    BlogsCard,
 }
