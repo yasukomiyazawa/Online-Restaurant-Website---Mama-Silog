@@ -1,4 +1,11 @@
-import { BestSellers, Blogs, CustomButton, Hero } from "@/components";
+import {
+  BestSellers,
+  Blogs,
+  CustomButton,
+  Footer,
+  Hero,
+  Navbar,
+} from "@/components";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -6,7 +13,9 @@ export default function Home() {
   return (
     // min-h-screen
     <main className="flex flex-col items-center justify-between">
-      <BestSellers />
+      <div>
+        <BestSellers />
+      </div>
       <div className="w-full bg-silogMeals2 bg-cover bg-center">
         <div className="h-1/4 flex justify-around py-20 text-white font-bold">
           <p className="text-4xl">Order Now!</p>
@@ -20,7 +29,9 @@ export default function Home() {
           <p className="text-4xl">See Menu</p>
         </div>
       </div>
-      <Blogs />
+      <div>
+        <Blogs />
+      </div>
     </main>
   );
 }
