@@ -5,7 +5,7 @@ import Hero from "./Hero";
 
 const Navbar = () => {
   return (
-    <div className="bg-silogMeals bg-cover w-full h-screen">
+    <div className="w-full">
       <nav className="flex justify-between h-25 drop-shadow-2xl bg-white shadow-2xl">
         <Image
           src="/logo.png"
@@ -37,7 +37,7 @@ const Navbar = () => {
         </div>
       </nav>
 
-      <Hero />
+      {/* <Hero /> */}
     </div>
   );
 };

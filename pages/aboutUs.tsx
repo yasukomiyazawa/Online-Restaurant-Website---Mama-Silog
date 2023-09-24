@@ -1,7 +1,17 @@
+import { Footer, Navbar } from "@/components";
 import React from "react";
+import "../app/globals.css";
 
 const aboutUs = () => {
-  return <div>aboutUs</div>;
+  return (
+    <>
+      <Navbar />
+
+      <div></div>
+
+      <Footer />
+    </>
+  );
 };
 
 export default aboutUs;

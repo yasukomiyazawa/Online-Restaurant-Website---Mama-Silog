@@ -5,14 +5,14 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <div className="flex justify-around mt-10">
+    <div className=" bg-silogMeals bg-cover w-full h-screen flex justify-around">
       <h1 className="pl-12 pb-5 text-white flex flex-col justify-center font-extrabold text-9xl">
         <span>No. 1</span>
         <span>Silog</span>
         <span>in Japan</span>
       </h1>
       <div>
-        <div className="flex justify-center">
+        <div className="flex justify-center mt-10">
           <Image
             src="/hero1.png"
             alt="silog meals photo"
