@@ -40,7 +40,7 @@
 /* START: Hero styles */
 
 .hover {
-  @apply hover:text-rose-900 cursor-pointer;
+  @apply hover:text-rose-950 cursor-pointer;
 }
 
 .hero {
