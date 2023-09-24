@@ -7,14 +7,15 @@ const Navbar = () => {
   return (
     <div className="w-full">
       <nav className="flex justify-between h-25 drop-shadow-2xl bg-white shadow-2xl">
-        <Image
-          src="/logo.png"
-          alt="logo"
-          width={250}
-          height={15}
-          className="ml-8"
-        />
-
+        <Link href="/" passHref>
+          <Image
+            src="/logo.png"
+            alt="logo"
+            width={250}
+            height={15}
+            className="ml-8"
+          />
+        </Link>
         <div className="flex text-xl font-semibold items-center mr-10 font-inter text-black justify-between w-1/2">
           <Link className="hover" href="/" passHref>
             Home
