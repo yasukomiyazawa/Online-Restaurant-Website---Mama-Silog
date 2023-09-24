@@ -16,12 +16,24 @@ const Navbar = () => {
         />
 
         <div className="flex text-xl font-semibold items-center mr-10 font-inter text-black justify-between w-1/2">
-          <div className="hover">Home</div>
-          <div className="hover">Menu</div>
-          <div className="hover">Gallery</div>
-          <div className="hover">Blog</div>
-          <div className="hover">About Us</div>
-          <div className="hover">Contact Us</div>
+          <Link className="hover" href="/" passHref>
+            Home
+          </Link>
+          <Link className="hover" href="/" passHref>
+            Menu
+          </Link>
+          <Link className="hover" href="/" passHref>
+            Gallery
+          </Link>
+          <Link className="hover" href="#blogs" passHref>
+            Blogs
+          </Link>
+          <Link className="hover" href="/" passHref>
+            About Us
+          </Link>
+          <Link className="hover" href="/" passHref>
+            Contact Us
+          </Link>
         </div>
       </nav>
 
