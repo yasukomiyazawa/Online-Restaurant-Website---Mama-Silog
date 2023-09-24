@@ -3,7 +3,7 @@ import { BestSellersCard } from ".";
 
 const BestSellers = () => {
   return (
-    <section id="bestsellers" className="h-screen w-full">
+    <section id="bestsellers" className="h-screen w-full mt-5">
       <h2 className="header">Best Sellers</h2>
 
       <div className="flex justify-center items-center gap-10">

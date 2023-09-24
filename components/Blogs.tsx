@@ -4,7 +4,7 @@ import { CustomButton } from ".";
 
 const Blogs = () => {
   return (
-    <div id="blogs" className="mx-20 h-screen">
+    <div id="blogs" className="mx-20 h-screen mt-5">
       <h2 className="header">Blogs</h2>
 
       <div className="grid grid-cols-3 grid-flow-row gap-y-44 gap-x-8 mt-15">
