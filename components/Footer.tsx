@@ -13,7 +13,7 @@ import {
 const Footer = () => {
   return (
     <>
-      <footer className="flex flex-wrap flex-col text-black mt-5 border-t border-gray-100 bg-footerBg bg-cover bg-bottom">
+      <footer className="flex flex-wrap flex-col text-black border-t border-gray-100 bg-footerBg1 bg-cover bg-center">
         <div className="flex max-md:flex-col flex-wrap justify-around gap-5 sm:px-16 px-6 py-10">
           <div className="flex flex-col justify-start items-start gap-6">
             <Image
@@ -85,7 +85,11 @@ const Footer = () => {
         </div>
       </footer>
       <div className="flex justify-center border-t border-gray-100 sm:px-16 px-6 py-10">
-        <p>Developed by Yasuko Miyazawa | All Rights Reserved.</p>
+        <p>
+          Developed by{" "}
+          <span className="font-semibold text-red-900">Yasuko Miyazawa</span> |
+          All Rights Reserved.
+        </p>
       </div>
     </>
   );

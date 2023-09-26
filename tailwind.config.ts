@@ -30,6 +30,7 @@ module.exports = {
         'silogMeals1': "url('/hero1.png')",
         'silogMeals2': "url('/silogMeals.png')",
         'footerBg': "url('/footer-bg.png')",
+        'footerBg1': "url('/footer-bg1.png')",
         'menuBanner': "url('/menu-banner.png')",
         'blog1': "url('/blog-1.png')",
         'blog2': "url('/blog-2.png')",

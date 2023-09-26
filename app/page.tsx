@@ -30,20 +30,35 @@ export default function Home() {
       </div>
       <Blogs />
 
-      <div>
-        <div>Subscribe Now</div>
-        <div>
-          Feast On Exclusive Offers! Subscribe for Delicious Deals and Fresh
-          Menu Updates!
+      <div className="w-full flex justify-center flex-col pt-12 pb-20 bg-slate-50">
+        <div className="flex justify-center flex-col gap-5">
+          <div className="flex justify-center text-3xl font-extrabold capitalize">
+            Subscribe Now
+          </div>
+          <div className="flex justify-center text-slate-500">
+            Feast On Exclusive Offers! Subscribe for Delicious Deals and Fresh
+            Menu Updates!
+          </div>
         </div>
-        {/* <form action="">
-          <input
-            type="email"
-            placeholder="enter your email"
-            className="email"
-          />
-          <input className="btn">subscribe</input>
-        </form> */}
+
+        <div className="flex justify-center mt-3">
+          <form
+            action=""
+            className="border rounded-full border-black flex justify-between bg-slate-200 px-5 py-3 mt-4 md:w-full"
+            style={{ width: "700px" }}
+          >
+            <input
+              type="email"
+              placeholder="enter your email"
+              className="bg-transparent w-full mr-2 px-2"
+            />
+            <input
+              type="submit"
+              placeholder="subscribe"
+              className="border border-black rounded-full px-5 py-1"
+            />
+          </form>
+        </div>
       </div>
     </main>
   );
