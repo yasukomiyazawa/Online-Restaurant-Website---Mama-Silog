@@ -29,6 +29,22 @@ export default function Home() {
         </div>
       </div>
       <Blogs />
+
+      <div>
+        <div>Subscribe Now</div>
+        <div>
+          Feast On Exclusive Offers! Subscribe for Delicious Deals and Fresh
+          Menu Updates!
+        </div>
+        {/* <form action="">
+          <input
+            type="email"
+            placeholder="enter your email"
+            className="email"
+          />
+          <input className="btn">subscribe</input>
+        </form> */}
+      </div>
     </main>
   );
 }

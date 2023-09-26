@@ -32,3 +32,14 @@ export interface PageBannerProps {
     title: string
 
 }
+
+export interface MenuCardProps {
+
+    img: string
+    itemAlt: string
+    item: string
+    price: number
+    ingr?: string
+    desc: string
+
+}
