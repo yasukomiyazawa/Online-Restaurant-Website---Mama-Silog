@@ -24,7 +24,7 @@ const Footer = () => {
               className="object-contain"
               layout="fixed"
             />
-            <p>
+            <p className="font-bold">
               Mama Silog <br /> All Rights Reserved &copy;
             </p>
           </div>
@@ -87,8 +87,10 @@ const Footer = () => {
       <div className="flex justify-center border-t border-gray-100 sm:px-16 px-6 py-10">
         <p>
           Developed by{" "}
-          <span className="font-semibold text-red-900">Yasuko Miyazawa</span> |
-          All Rights Reserved.
+          <span className="font-semibold text-red-900 text-xl">
+            Yasuko Miyazawa
+          </span>{" "}
+          | All Rights Reserved.
         </p>
       </div>
     </>

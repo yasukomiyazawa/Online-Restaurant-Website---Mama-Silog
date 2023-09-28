@@ -6,7 +6,7 @@ import MenuCard from "@/components/MenuCard";
 
 const menu = () => {
   return (
-    <>
+    <div className="grid grid-row-auto">
       <Navbar />
 
       <div>
@@ -90,7 +90,7 @@ const menu = () => {
         /> */}
 
       <Footer />
-    </>
+    </div>
   );
 };
 

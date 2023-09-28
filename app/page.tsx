@@ -12,7 +12,8 @@ import Link from "next/link";
 export default function Home() {
   return (
     // min-h-screen
-    <main className="flex flex-col items-center justify-between">
+    // <main className="flex flex-col items-center justify-between">
+    <main className="grid grid-rows-auto">
       <Hero />
       <BestSellers />
       <div className="w-full bg-silogMeals2 bg-cover bg-center">
@@ -28,6 +29,7 @@ export default function Home() {
           <p className="text-4xl">See Menu</p>
         </div>
       </div>
+
       <Blogs />
 
       <div className="w-full flex justify-center flex-col pt-12 pb-20 bg-slate-50">

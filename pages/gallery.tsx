@@ -5,7 +5,7 @@ import PageBanner from "@/components/PageBanner";
 
 const gallery = () => {
   return (
-    <>
+    <div className="grid grid-row-auto">
       <Navbar />
 
       <div>
@@ -13,7 +13,7 @@ const gallery = () => {
       </div>
 
       <Footer />
-    </>
+    </div>
   );
 };
 
