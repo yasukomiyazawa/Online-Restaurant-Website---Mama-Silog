@@ -80,15 +80,6 @@ const menu = () => {
         />
       </div>
 
-      {/* <MenuCard
-          img="/bangsilog.png"
-          itemAlt="bangsilog"
-          item="Bangsilog (Bangus Silog)"
-          price={780}
-          ingr="grilled milkfish (bangus), garlic rice, fried egg"
-          desc="Grilled milkfish with garlic rice and a fried egg."
-        /> */}
-
       <Footer />
     </div>
   );

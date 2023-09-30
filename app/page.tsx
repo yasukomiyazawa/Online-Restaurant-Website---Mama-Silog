@@ -52,12 +52,13 @@ export default function Home() {
             <input
               type="email"
               placeholder="enter your email"
+              style={{ outline: "none" }}
               className="bg-transparent w-full mr-2 px-2"
             />
             <input
               type="submit"
               placeholder="subscribe"
-              className="border border-black rounded-full px-5 py-1"
+              className="border border-black rounded-full px-5 py-1 bg-slate-50 hover:bg-yellow-500 font-semibold cursor-pointer"
             />
           </form>
         </div>

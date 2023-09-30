@@ -35,7 +35,7 @@ const Footer = () => {
               <ul>
                 <li className="pb-3 hover">
                   <FontAwesomeIcon icon={faPhone} className="pr-3" />
-                  +81 80-2340-5815
+                  +81 90 1651 1559
                 </li>
                 <li className="pb-3 hover">
                   <FontAwesomeIcon icon={faEnvelope} className="pr-3" />

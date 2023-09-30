@@ -34,7 +34,7 @@ const blog4 = () => {
       />
 
       <div className="border border-t-black">
-        <h3 className="font-bold text-3xl flex justify-center my-3">
+        <h3 className="font-bold text-3xl flex justify-center my-8">
           Other Blogs
         </h3>
         <div className="grid grid-cols-3 grid-flow-row gap-y-44 gap-x-8 mt-15 mb-10 mx-10">

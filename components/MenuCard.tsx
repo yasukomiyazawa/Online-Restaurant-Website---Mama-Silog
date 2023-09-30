@@ -22,7 +22,7 @@ const MenuCard = ({ img, itemAlt, item, price, ingr, desc }: MenuCardProps) => {
         </div>
         <p className="text-slate-500">{ingr}</p>
         <p className="text-slate-500 text-base pb-4">{desc}</p>
-        <CustomButton title="Order" href="/" style="py-0" />
+        <CustomButton title="Order" href="/orderForm" style="py-0" />
       </div>
     </div>
   );

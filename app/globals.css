@@ -39,8 +39,11 @@
 
 /* START: Hero styles */
 
-.hover {
+/* .hover {
   @apply hover:text-rose-950 cursor-pointer font-semibold;
+} */
+.hover {
+  @apply hover:text-white cursor-pointer font-semibold;
 }
 
 .hero {

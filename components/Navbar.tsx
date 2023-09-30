@@ -23,17 +23,17 @@ const Navbar = () => {
           <Link className="hover" href="/menu" passHref>
             Menu
           </Link>
-          <Link className="hover" href="/gallery" passHref>
+          {/* <Link className="hover" href="/gallery" passHref>
             Gallery
-          </Link>
+          </Link> */}
           <Link className="hover" href="/blogs" passHref>
             Blogs
           </Link>
           <Link className="hover" href="/aboutUs" passHref>
             About Us
           </Link>
-          <Link className="hover" href="/contactUs" passHref>
-            Contact Us
+          <Link className="hover" href="/orderForm" passHref>
+            Order
           </Link>
         </div>
       </nav>
