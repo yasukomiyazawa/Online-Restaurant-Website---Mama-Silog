@@ -74,7 +74,7 @@ const Footer = () => {
                 <h3 className="pb-3 font-semibold">{link.title}</h3>
                 <ul>
                   {link.links.map((item) => (
-                    <li key={item.title} className="hover2">
+                    <li key={item.title} className="hover1">
                       <Link href={item.url}>{item.title}</Link>
                     </li>
                   ))}

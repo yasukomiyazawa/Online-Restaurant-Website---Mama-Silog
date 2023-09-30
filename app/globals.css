@@ -42,7 +42,7 @@
 .hover {
   @apply hover:text-rose-950 cursor-pointer font-semibold;
 }
-.hover2 {
+.hover1 {
   @apply hover:text-white cursor-pointer font-semibold;
 }
 

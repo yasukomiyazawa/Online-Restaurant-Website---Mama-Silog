@@ -22,7 +22,7 @@ export default function Home() {
 
           <CustomButton
             title="Click Here"
-            href="/menu"
+            href="/orderForm"
             style="rounded-lg text-2xl"
           />
 
