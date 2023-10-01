@@ -33,11 +33,11 @@ const Footer = () => {
             <div>
               <h3 className="pb-3 font-semibold">Contact Information</h3>
               <ul>
-                <li className="pb-3 hover">
+                <li className="pb-3 hover1">
                   <FontAwesomeIcon icon={faPhone} className="pr-3" />
                   +81 90 1651 1559
                 </li>
-                <li className="pb-3 hover">
+                <li className="pb-3 hover1">
                   <FontAwesomeIcon icon={faEnvelope} className="pr-3" />
                   www.mamasilog@gmail.com
                 </li>
@@ -49,17 +49,17 @@ const Footer = () => {
             <div>
               <h3 className="pb-3 font-semibold">Follow Us</h3>
               <ul>
-                <li className="pb-3 hover">
+                <li className="pb-3 hover1">
                   <FontAwesomeIcon icon={faFacebookF} className="pr-3" />
                   <Link href="/"></Link>
                   Facebook
                 </li>
-                <li className="pb-3 hover">
+                <li className="pb-3 hover1">
                   <FontAwesomeIcon icon={faInstagram} className="pr-3" />
                   <Link href="/"></Link>
                   Instagram
                 </li>
-                <li className="pb-3 hover">
+                <li className="pb-3 hover1">
                   <FontAwesomeIcon icon={faTwitter} className="pr-3" />
                   <Link href="/"></Link>
                   Twitter

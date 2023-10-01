@@ -3,8 +3,54 @@ import React from "react";
 import "../app/globals.css";
 import PageBanner from "@/components/PageBanner";
 import Link from "next/link";
+import Script from "next/script";
+import { useState } from "react";
 
 const orderForm = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    number: "",
+    order: "",
+  });
+
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { id, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [id]: value,
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch(
+        "https://script.google.com/macros/s/AKfycbybUBFp9GXgpuQ38Lv0lbkHI5-8W8TYC_EQA8xRno8LRRJ7aRBk3QY-zEkQwTejocCE/exec",
+        {
+          method: "POST",
+          mode: "no-cors",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
+
+      if (response.ok) {
+        alert("Order submitted successfully!");
+      } else {
+        alert("Order not submitted. Please re-enter order.");
+        console.error("Order submission failed.");
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+    }
+  };
+
   return (
     <div>
       <div className="grid grid-row-auto">
@@ -16,7 +62,7 @@ const orderForm = () => {
 
         <div className="grid grid-cols-2 gap-10 m-11">
           <div>
-            <form action="" className="flex flex-col gap-10 px-10">
+            <form action="" className="flex flex-col gap-10 px-10" id="form">
               <h1 className="text-3xl font-bold">PLACE YOUR ORDER</h1>
               <h2 className="font-semibold text-gray-600">
                 Ordering from us is easy! <br /> Fill out the form below with
@@ -28,6 +74,7 @@ const orderForm = () => {
                 </label>
                 <input
                   type="text"
+                  name="Name"
                   id="name"
                   style={{ outline: "none" }}
                   className="border-b border-x-gray-600"
@@ -39,6 +86,7 @@ const orderForm = () => {
                 </label>
                 <input
                   type="email"
+                  name="Email"
                   id="email"
                   style={{ outline: "none" }}
                   className="border-b border-x-gray-600"
@@ -50,6 +98,7 @@ const orderForm = () => {
                 </label>
                 <input
                   type="text"
+                  name="Phone Number"
                   id="number"
                   style={{ outline: "none" }}
                   className="border-b border-x-gray-600"
@@ -60,7 +109,7 @@ const orderForm = () => {
                   Order:
                 </label>
                 <textarea
-                  name="order"
+                  name="Order"
                   id="order"
                   cols={20}
                   rows={5}
@@ -69,6 +118,9 @@ const orderForm = () => {
                   className="border-b border-x-gray-600"
                 />
               </div>
+              <button type="submit" onClick={handleSubmit}>
+                Order
+              </button>
             </form>
           </div>
 
