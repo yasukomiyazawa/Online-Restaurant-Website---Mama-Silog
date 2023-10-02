@@ -21,7 +21,7 @@ const Navbar = () => {
             alt="logo"
             width={250}
             height={15}
-            className="ml-8"
+            className="ml-8 max-lg:w-36"
           />
         </Link>
         <div className="lg:flex hidden text-xl font-semibold items-center mr-10 font-inter text-black justify-between w-1/2">

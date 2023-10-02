@@ -13,7 +13,7 @@ const menu = () => {
         <PageBanner bgImg="bg-menuBanner" title="Menu" />
       </div>
 
-      <div className="grid grid-cols-2 grid-flow-row mx-14 mt-8">
+      <div className="grid grid-cols-2 grid-flow-row mx-14 mt-8 max-xl:grid-cols-1 max-xl:mx-0">
         <MenuCard
           img="/cornsilog.png"
           itemAlt="cornsilog"
