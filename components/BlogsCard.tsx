@@ -36,11 +36,11 @@ const BlogsCard = ({
             </div>
           </div>
         </div>
-        <div className="max-xl:flex max-xl:flex-col max-xl:items-center">
-          <h3 className="text-black-100 font-semibold my-2 max-xl:base max-xl:flex max-xl:justify-center">
+        <div className="max-lg:flex max-lg:flex-col max-lg:items-center">
+          <h3 className="text-black-100 font-semibold my-2 max-lg:base max-lg:text-center">
             {title}
           </h3>
-          <p className="text-zinc-400 mb-2 max-xl:text-sm max-xl:flex max-xl:justify-center">
+          <p className="text-zinc-400 mb-2 max-lg:text-sm max-lg:text-center">
             {description}
           </p>
         </div>

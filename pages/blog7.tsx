@@ -31,7 +31,7 @@ const blog7 = () => {
         date="July 15, 2023"
       />
 
-      <div className="border border-t-black">
+      <div className="border border-t-black max-lg:hidden">
         <h3 className="font-bold text-3xl flex justify-center my-8">
           Other Blogs
         </h3>
@@ -65,6 +65,34 @@ const blog7 = () => {
               description="Explore the rich tapestry of Filipino flavors and culinary heritage on a delightful journey."
             />
             <CustomButton title="Read More" href="/blog1" />
+          </div>
+        </div>
+      </div>
+
+      <div className="border border-t-black lg:hidden">
+        <h3 className="font-bold text-3xl flex justify-center my-8">
+          Other Blogs
+        </h3>
+        <div className="grid grid-cols-1 grid-rows-2 gap-y-44 gap-x-8 mt-15 mb-10 mx-10 max-lg:m-8 max-lg:gap-y-4">
+          <div className="flex flex-col items-center">
+            <BlogsCard
+              bgImg="bg-blog8"
+              user="Maria Tanaka"
+              date="August 20, 2023"
+              title="Sweet Fusion: Filipino-Japanese Desserts"
+              description="Indulge in modern halo-halo and matcha-infused treats—where Filipino and Japanese sweets collide."
+            />
+            <CustomButton title="Read More" href="/blog8" />
+          </div>
+          <div className="flex flex-col items-center">
+            <BlogsCard
+              bgImg="bg-blog9"
+              user="Yuki Nakamura"
+              date="September 10, 2023"
+              title="Filipino Festivals in Japan"
+              description="Take a culinary voyage across the Philippines, savoring distinctive flavors from Bicol to Cebu."
+            />
+            <CustomButton title="Read More" href="/blog9" />
           </div>
         </div>
       </div>

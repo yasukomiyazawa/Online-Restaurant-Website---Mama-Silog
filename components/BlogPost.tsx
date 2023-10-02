@@ -25,7 +25,7 @@ const BlogPost = ({
           className="shadow-md object-cover"
         />
       </div>
-      <h1 className="flex justify-center text-4xl font-extrabold ">
+      <h1 className="flex justify-center text-4xl font-extrabold max-xl:text-2xl max-xl:block max-xl:text-center">
         {blogTitle}
       </h1>
       <div className="flex w-full justify-center gap-3">
@@ -47,7 +47,7 @@ const BlogPost = ({
         </div>
       </div>
       <div></div>
-      <div className="mx-52 flex flex-col gap-4 leading-8">
+      <div className="mx-52 max-xl:mx-14 flex flex-col gap-4 leading-8 max-sm:mx-5 max-sm:text-sm">
         <p>{p1}</p>
         <p>{p2}</p>
         <p>{p3}</p>

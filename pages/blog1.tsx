@@ -34,11 +34,11 @@ const blog1 = () => {
         date="January 5, 2023"
       />
 
-      <div className="border border-t-black">
+      <div className="border border-t-black max-lg:hidden">
         <h3 className="font-bold text-3xl flex justify-center my-8">
           Other Blogs
         </h3>
-        <div className="grid grid-cols-3 grid-flow-row gap-y-44 gap-x-8 mt-15 mb-10 mx-10">
+        <div className="grid grid-cols-3 grid-flow-row gap-y-44 gap-x-8 mt-15 mb-10 mx-10 max-xl:mx-2">
           <div>
             <BlogsCard
               bgImg="bg-blog2"
@@ -68,6 +68,34 @@ const blog1 = () => {
               description="Celebrate the harmony of Japanese and Filipino flavors with locally sourced ingredients."
             />
             <CustomButton title="Read More" href="/blog4" />
+          </div>
+        </div>
+      </div>
+
+      <div className="border border-t-black lg:hidden">
+        <h3 className="font-bold text-3xl flex justify-center my-8">
+          Other Blogs
+        </h3>
+        <div className="grid grid-cols-1 grid-rows-2 gap-y-44 gap-x-8 mt-15 mb-10 mx-10 max-lg:m-8 max-lg:gap-y-4">
+          <div className="flex flex-col items-center">
+            <BlogsCard
+              bgImg="bg-blog2"
+              user="Antonio Cruz"
+              date="February 10, 2023"
+              title=" Featured Dish of the Month: Tapsilog"
+              description="Tapsilog, a beloved Filipino dish featuring marinated pork, garlic fried rice, and sunny-side-up eggs."
+            />
+            <CustomButton title="Read More" href="/blog2" />
+          </div>
+          <div className="flex flex-col items-center">
+            <BlogsCard
+              bgImg="bg-blog3"
+              user="Yuki Tanaka"
+              date="March 15, 2023"
+              title="Filipino Food Culture in Japan"
+              description="Experience the fusion of Filipino and Japanese cuisines in the heart of Japan, where two culinary worlds meet."
+            />
+            <CustomButton title="Read More" href="/blog3" />
           </div>
         </div>
       </div>

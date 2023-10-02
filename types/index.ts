@@ -19,10 +19,11 @@ export interface BestSellersCardProps {
 export interface BlogCardProps {
 
     bgImg: string
-    user: string
-    date: string
+    user?: string
+    date?: string
     title: string
     description: string
+    href?: string
 
 }
 

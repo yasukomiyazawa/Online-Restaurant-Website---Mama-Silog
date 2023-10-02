@@ -17,13 +17,13 @@ const BestSellers = () => {
           <BestSellersCard
             bgStyle="bg-tuyosilog bg-cover bg-center w-64 h-64 max-sm:w-36 max-sm:h-36 max-md:w-44 max-md:h-44 max-xl:w-52 max-xl:h-52"
             price={850}
-            priceStyle="bg-rose-950 border-rose-950"
+            priceStyle="bg-yellow-500 border-yellow-500"
             item="Tuyosilog"
           />
           <BestSellersCard
             bgStyle="bg-tocilog bg-cover bg-center w-64 h-64 max-sm:w-36 max-sm:h-36 max-md:w-44 max-md:h-44 max-xl:w-52 max-xl:h-52"
             price={800}
-            priceStyle="bg-rose-950 border-rose-950"
+            priceStyle="bg-yellow-500 border-yellow-500"
             item="Tocilog"
           />
           <BestSellersCard
