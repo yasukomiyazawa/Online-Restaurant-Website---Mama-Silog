@@ -36,9 +36,13 @@ const BlogsCard = ({
             </div>
           </div>
         </div>
-        <div>
-          <h3 className="text-black-100 font-semibold my-2">{title}</h3>
-          <p className="text-zinc-400 mb-2">{description}</p>
+        <div className="max-xl:flex max-xl:flex-col max-xl:items-center">
+          <h3 className="text-black-100 font-semibold my-2 max-xl:base max-xl:flex max-xl:justify-center">
+            {title}
+          </h3>
+          <p className="text-zinc-400 mb-2 max-xl:text-sm max-xl:flex max-xl:justify-center">
+            {description}
+          </p>
         </div>
       </div>
     </>

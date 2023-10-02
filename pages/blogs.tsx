@@ -13,8 +13,8 @@ const blogs = () => {
           <PageBanner bgImg="bg-menuBanner" title="Blogs" />
         </div>
 
-        <div className="grid grid-cols-3 grid-flow-row gap-y-10 gap-x-8 m-10">
-          <div>
+        <div className="grid grid-cols-3 grid-flow-row gap-y-10 gap-x-8 m-10 max-xl:grid-cols-1">
+          <div className="max-xl:flex max-xl:flex-col max-xl:items-center">
             <BlogsCard
               bgImg="bg-blog1"
               user="Maria Santos"
@@ -22,9 +22,13 @@ const blogs = () => {
               title="Introduction to Filipino Cuisine"
               description="Explore the rich tapestry of Filipino flavors and culinary heritage on a delightful journey."
             />
-            <CustomButton title="Read More" href="/blog1" />
+            <CustomButton
+              title="Read More"
+              href="/blog1"
+              // style="max-xl:flex max-xl:justify-content"
+            />
           </div>
-          <div>
+          <div className="max-xl:flex max-xl:flex-col max-xl:items-center">
             <BlogsCard
               bgImg="bg-blog2"
               user="Antonio Cruz"
@@ -34,7 +38,7 @@ const blogs = () => {
             />
             <CustomButton title="Read More" href="/blog2" />
           </div>
-          <div>
+          <div className="max-xl:flex max-xl:flex-col max-xl:items-center">
             <BlogsCard
               bgImg="bg-blog3"
               user="Yuki Tanaka"
@@ -44,7 +48,7 @@ const blogs = () => {
             />
             <CustomButton title="Read More" href="/blog3" />
           </div>
-          <div>
+          <div className="max-xl:flex max-xl:flex-col max-xl:items-center">
             <BlogsCard
               bgImg="bg-blog4"
               user="Kenji Nakamura"
@@ -54,7 +58,7 @@ const blogs = () => {
             />
             <CustomButton title="Read More" href="/blog4" />
           </div>
-          <div>
+          <div className="max-xl:flex max-xl:flex-col max-xl:items-center">
             <BlogsCard
               bgImg="bg-blog5"
               user="Emily Johnson"
@@ -64,7 +68,7 @@ const blogs = () => {
             />
             <CustomButton title="Read More" href="/blog5" />
           </div>
-          <div>
+          <div className="max-xl:flex max-xl:flex-col max-xl:items-center">
             <BlogsCard
               bgImg="bg-blog6"
               user="Sofia Rodriguez"
@@ -74,7 +78,7 @@ const blogs = () => {
             />
             <CustomButton title="Read More" href="/blog6" />
           </div>
-          <div>
+          <div className="max-xl:flex max-xl:flex-col max-xl:items-center">
             <BlogsCard
               bgImg="bg-blog7"
               user="Carlos Santos"
@@ -84,7 +88,7 @@ const blogs = () => {
             />
             <CustomButton title="Read More" href="/blog7" />
           </div>
-          <div>
+          <div className="max-xl:flex max-xl:flex-col max-xl:items-center">
             <BlogsCard
               bgImg="bg-blog8"
               user="Maria Tanaka"
@@ -94,9 +98,9 @@ const blogs = () => {
             />
             <CustomButton title="Read More" href="/blog8" />
           </div>
-          <div>
+          <div className="max-xl:flex max-xl:flex-col max-xl:items-center">
             <BlogsCard
-              bgImg="bg-blog9"
+              bgImg="bg-blog9 bg-top"
               user="Yuki Nakamura"
               date="September 10, 2023"
               title="Filipino Festivals in Japan"
