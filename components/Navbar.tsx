@@ -47,7 +47,7 @@ const Navbar = () => {
             ☰
           </button>
           {isOpen && (
-            <div className="flex flex-col absolute items-center justify-center top-20 right-0 text-xl gap-4 bg-white w-full h-auto py-10">
+            <div className="flex flex-col absolute items-center justify-center top-10 right-0 text-xl gap-4 bg-white w-full h-auto">
               <Link className="hover px-4 py-2" href="/menu" passHref>
                 Menu
               </Link>
