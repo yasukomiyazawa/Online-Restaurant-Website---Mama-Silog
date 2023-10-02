@@ -1,4 +1,4 @@
-import { Footer, Navbar } from "@/components";
+import { CustomButton, Footer, Navbar } from "@/components";
 import React from "react";
 import "../app/globals.css";
 import PageBanner from "@/components/PageBanner";
@@ -7,49 +7,50 @@ import Script from "next/script";
 import { useState } from "react";
 
 const orderForm = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    number: "",
-    order: "",
-  });
+  // const [formData, setFormData] = useState({
+  //   name: "",
+  //   email: "",
+  //   number: "",
+  //   order: "",
+  // });
 
-  const handleInputChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    const { id, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [id]: value,
-    }));
-  };
+  // const handleInputChange = (
+  //   e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  // ) => {
+  //   const { id, value } = e.target;
+  //   setFormData((prevData) => ({
+  //     ...prevData,
+  //     [id]: value,
+  //   }));
+  // };
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
+  // const handleSubmit = async (e: React.FormEvent) => {
+  //   e.preventDefault();
 
-    try {
-      const response = await fetch(
-        "https://script.google.com/macros/s/AKfycbybUBFp9GXgpuQ38Lv0lbkHI5-8W8TYC_EQA8xRno8LRRJ7aRBk3QY-zEkQwTejocCE/exec",
-        {
-          method: "POST",
-          mode: "no-cors",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        }
-      );
+  //   try {
+  //     const response = await fetch(
+  //       "https://script.google.com/macros/s/AKfycbyNNBI3ui7X3kKac4OTfLOb7GUcdah3xDxEQ-k5ycye1RZ14YyR4jq1ok2R5fIq4TSt/exec",
 
-      if (response.ok) {
-        alert("Order submitted successfully!");
-      } else {
-        alert("Order not submitted. Please re-enter order.");
-        console.error("Order submission failed.");
-      }
-    } catch (error) {
-      console.error("Error submitting form:", error);
-    }
-  };
+  //       {
+  //         method: "POST",
+  //         mode: "no-cors",
+  //         headers: {
+  //           "Content-Type": "application/x-www-form-urlencoded",
+  //         },
+  //         body: JSON.stringify(formData),
+  //       }
+  //     );
+
+  //     if (response.ok) {
+  //       alert("Order submitted successfully!");
+  //     } else {
+  //       alert("Order not submitted. Please re-enter order.");
+  //       console.error("Order submission failed.");
+  //     }
+  //   } catch (error) {
+  //     console.error("Error submitting form:", error);
+  //   }
+  // };
 
   return (
     <div>
@@ -118,9 +119,8 @@ const orderForm = () => {
                   className="border-b border-x-gray-600"
                 />
               </div>
-              <button type="submit" onClick={handleSubmit}>
-                Order
-              </button>
+              {/* <button type="submit" onClick={handleSubmit}> */}
+              <CustomButton title="Order" href="/orderForm" />
             </form>
           </div>
 

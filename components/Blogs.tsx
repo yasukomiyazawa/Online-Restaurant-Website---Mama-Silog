@@ -7,8 +7,8 @@ import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
 
 const Blogs = () => {
   return (
-    <div id="blogs" className="mx-20 h-[500] mt-5 mb-10">
-      <h2 className="header">Blogs</h2>
+    <div id="blogs" className="mx-20 mt-16 mb-10 max-xl:mt-10">
+      <h2 className="header headerQuery">Blogs</h2>
 
       <div className="grid grid-cols-3 grid-flow-row gap-y-44 gap-x-8 mt-15">
         <div>

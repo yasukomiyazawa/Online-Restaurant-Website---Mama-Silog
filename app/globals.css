@@ -97,5 +97,13 @@
 /* HEADERS */
 
 .header {
-  @apply flex justify-center mb-10 mt-10 text-5xl font-bold;
+  @apply flex justify-center mb-10 text-5xl font-bold;
+}
+
+.section {
+  @apply h-auto w-full pt-16 pb-20 max-xl:my-10;
+}
+
+.headerQuery {
+  @apply max-sm:text-3xl max-md:text-4xl max-xl:mb-7 max-xl:mt-0;
 }
